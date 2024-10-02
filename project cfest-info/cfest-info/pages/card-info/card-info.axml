@@ -1,0 +1,49 @@
+<view class="container-card-info">
+  <!-- Judul -->
+  <text class="judul">{{events.title}}</text>
+
+  <!-- Kuota, Open Regist, Deadline -->
+  <view class="info-row">
+    <view class="info-box-kouta">
+      <text class="info-value-kouta">{{events.Kouta}} Orang</text>
+      <text class="info-label-kouta">Kuota</text>
+    </view>
+    <view class="info-box-regist">
+      <text class="info-value-regist">{{events.open_registration}}</text>
+      <text class="info-label-regist">Open Regist</text>
+    </view>
+    <view class="info-box-deadline">
+      <text class="info-value-deadline">{{events.deadline}}</text>
+      <text class="info-label-deadline">Deadline</text>
+    </view>
+  </view>
+
+  <!-- Detail -->
+  <view class="section-detail">
+    <text class="section-detail-title">Info Detail</text>
+    <text class="section-content-detail">{{events.info_detail}}</text>
+  </view>
+
+  <!-- Benefit -->
+  <view class="section-benefit">
+    <text class="section-title-benefit">Benefit</text>
+    <view class="section-content-benefit">
+      <block a:for="{{events.benefits}}" a:key="index">
+        <text>{{index + 1}}. {{item}}</text>
+      </block>
+    </view>
+  </view>
+
+  <!-- Persyaratan -->
+  <view class="section-payload">
+    <text class="section-title-payload">Persyaratan</text>
+    <view class="section-content-payload">
+      <block a:for="{{events.requirements}}" a:key="index">
+        <text>{{index + 1}}. {{item}}</text>
+      </block>
+    </view>
+  </view>
+
+  <!-- Tombol Daftar -->
+  <button class="daftar-btn">Daftar</button>
+</view>

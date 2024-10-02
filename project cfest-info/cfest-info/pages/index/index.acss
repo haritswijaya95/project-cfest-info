@@ -1,0 +1,111 @@
+/* .container{
+  overflow:scroll
+} */
+
+.judul {
+  /* display: inline-block; */
+  display: flex;
+  justify-content:center;
+  padding:40rpx;
+  font-size: 44rpx;
+  font-weight: bold;
+  margin-bottom: 20rpx;
+  margin-right: -30% auto;
+  font-family: 'Times New Roman', Times, Serif;
+}
+
+
+.info-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10rpx;
+  padding:8rpx 16rpx;
+}
+
+.informasi {
+  margin-left:10rpx;
+  font-size: 36rpx;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.informasi-selengkapnya {
+  display: inline-block;
+  color: #007bff;  /* Link color */
+  font-size: 36rpx;
+  margin-right: 30rpx;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.info-content {
+  cursor: pointer;
+  border-radius: 20rpx;
+  margin-bottom: 16rpx;
+  margin-right: 20rpx;
+  margin-left: 20rpx;
+  border: 1rpx solid #ccc;
+  border-radius: 15rpx;
+  padding: 18rpx;
+  background-color: #6ddbee;  /* White background for items */
+  box-shadow: 0 2rpx 4rpx rgba(0, 0, 0, 0.1);
+  /* overflow-wrap: break-word; */
+}
+
+
+.content-section {
+  display: flex;
+  flex-direction: row;
+  /* margin:20rpx 30rpx; */
+  /* padding: 20rpx 30rpx; */
+  padding-top:20rpx;
+  padding-bottom:20rpx;
+  padding-left:30rpx;
+  padding-right:50rpx;
+  width: 130%;
+  overflow-x:scroll;
+
+}
+
+.cfest-item {
+  margin:5rpx auto;
+  display: flex;
+  flex-direction: column;
+  width:500rpx;
+  height:220rpx;
+}
+
+.header-row{
+  display:flex;
+  flex-direction:row;
+}
+
+.header-column{
+  display:flex;
+  flex-direction:column;
+}
+
+.cfest-name {
+  font-size: 30rpx;
+  font-weight:bold;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  overflow-wrap: break-word;
+}
+
+.cfest-date {
+  color: #888;  /* Grey color for date */
+  margin-bottom: 10rpx;
+  font-size:30rpx;
+  margin-top:10rpx;
+}
+
+.cfest-image {
+  width: 100rpx;
+  height: 80rpx;
+  margin-top: 8rpx;
+}
+
+.cfest-deskripsi {
+  font-size: 24rpx;
+  color: #444;
+  margin-top: 4rpx;
+}

@@ -1,0 +1,23 @@
+<view class="container">
+  <view class="judul">CFEST Info</view>
+  <view class="info-header">
+    <text class="informasi">Informasi Terkini</text>
+    <navigator onTap="handleNavigation" class="informasi-selengkapnya" url="/pages/filter-informasi/filter-informasi">Selengkapnya</navigator>
+  </view>
+  <view class="content-section">
+    <block a:for="{{events}}" a:key="id">
+      <view class="info-content" onTap="navigateToCardInfo" url="/pages/card-info/card-info" data-id="{{item.id}}">
+        <view class="cfest-item">
+          <view class="header-row">
+            <view class="header-column">
+              <text class="cfest-name">{{item.title}}</text>
+              <text class="cfest-date">{{item.date}}</text>
+            </view>
+            <image class="cfest-image" src="{{item.image_url}}" mode="aspectFill"></image>
+          </view>
+          <text class="cfest-deskripsi">{{item.description}}</text>
+        </view>
+      </view>
+    </block>
+  </view>
+</view>

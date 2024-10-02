@@ -1,0 +1,23 @@
+<view class="container">
+  <view class="search-container">
+    <input class="search-bar" type="text" placeholder="Carilah Data" onInput="onSearch" />
+    <button class="dalamnegeri" type="button" onTap="onClickDalamNegeri">Dalam Negeri</button>
+    <button class="luarnegeri" type="button" onTap="onClickLuarNegeri">Luar Negeri</button>
+  </view>
+  <view class="content-section">
+    <block a:for="{{filteredEvents}}" a:key="id">
+      <view class="info-content" onTap="navigateToCardInfo" data-id="{{item.id}}">
+        <view class="cfest-item">
+          <view class="header-row">
+            <view class="header-column">
+              <text class="cfest-name">{{item.title}}</text>
+              <text class="cfest-date">{{item.date}}</text>
+            </view>
+            <image class="cfest-image" src="{{item.image_url}}" mode="scaleToFill"></image>
+          </view>
+          <text class="cfest-deskripsi">{{item.description}}</text>
+        </view>
+      </view>
+    </block>
+  </view>
+</view>

@@ -1,0 +1,11 @@
+{
+  "subPackageBuildType": "shared",
+  "pages": [
+    "pages/index/index",
+    "pages/filter-informasi/filter-informasi",
+    "pages/card-info/card-info"
+  ],
+  "window": {
+    "defaultTitle": "Filter Cfest Info"
+  }
+}

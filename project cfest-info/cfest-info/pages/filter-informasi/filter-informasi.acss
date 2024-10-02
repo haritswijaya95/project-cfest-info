@@ -1,0 +1,132 @@
+/* .container{
+  overflow:scroll
+} */
+
+
+.info-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10rpx;
+  padding:8rpx 16rpx;
+}
+
+.search-bar {
+  text-align: center;
+  margin-top:65px;
+  width: 80%;
+  padding: 8px;
+  border-radius: 20px;
+  margin-left:35px;
+  border: 1px solid #ddd;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  font-size: 17px;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.dalamnegeri{
+  width:42%;
+  margin-top:15px;
+  border-radius:20px;
+  margin-left:38px;
+  color:rgb(245, 238, 238);
+  background-color: #959697;
+}
+
+.luarnegeri{
+  width:42%;
+  margin-top:15px;
+  border-radius:20px;
+  color:rgb(245, 238, 238);
+  background-color:#959697;
+  margin-left: 400rpx;
+  margin-top:-45px;
+}
+
+.informasi {
+  margin-left:10rpx;
+  font-size: 36rpx;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.informasi-selengkapnya {
+  display: inline-block;
+  color: #007bff;  /* Link color */
+  font-size: 36rpx;
+  margin-left: -200rpx;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.info-content {
+  cursor: pointer;
+  border-radius: 20rpx;
+  margin-bottom: 20rpx;
+  margin-right: 20rpx;
+  margin-left: 52rpx;
+  border: 1rpx solid rgb(204, 204, 204);
+  border-radius: 15rpx;
+  padding: 16rpx;
+  background-color:#6ddbee ;  /* White background for items */
+  box-shadow: 0 2rpx 4rpx rgba(0, 0, 0, 0.1);
+  /* overflow-wrap: break-word; */
+}
+
+
+.content-section {
+  display: flex;
+  flex-direction: column;
+  /* margin:20rpx 30rpx; */
+  /* padding: 20rpx 30rpx; */
+  padding-top:20rpx;
+  padding-bottom:20rpx;
+  padding-left:30rpx;
+  padding-right:50rpx;
+  width: 85%;
+  margin:30px auto;
+  overflow-x:scroll;
+
+}
+
+.cfest-item {
+  margin:5rpx auto;
+  display: flex;
+  flex-direction: column;
+  width:500rpx;
+  height:220rpx;
+}
+
+.header-row{
+  display:flex;
+  flex-direction:row;
+}
+
+.header-column{
+  display:flex;
+  flex-direction:column;
+}
+
+.cfest-name {
+  font-size: 30rpx;
+  font-weight:bold;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  overflow-wrap: break-word;
+}
+
+.cfest-date {
+  color: #888;  /* Grey color for date */
+  margin-bottom: 10rpx;
+  font-size:30rpx;
+  margin-top:10rpx;
+}
+
+.cfest-image {
+  width: 121rpx;
+  height: 121rpx;
+  margin-top: 8rpx;
+}
+
+.cfest-deskripsi {
+  font-size: 25rpx;
+  color: #444;
+  margin-top: 4rpx;
+}
